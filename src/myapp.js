@@ -1,12 +1,12 @@
-import _ from 'lodash';
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-function component() {
-  var element = document.createElement('div');
-
-  // Lodash, now imported by this script
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-
-  return element;
+class Hello extends React.Component {
+  render(){
+    return(
+      <h1>Hello3331</h1>
+    )
+  }
 }
 
-document.body.appendChild(component());
+ReactDOM.render(<Hello />,document.getElementById('app'))
